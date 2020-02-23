@@ -1,0 +1,91 @@
+@import './../../variables.less';
+
+.navigation{
+    height: 70px;
+    padding: 10px;
+    background-color: @white;
+    // box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    // box-shadow: 0 1px 6px rgba(57,73,76,.25);
+    box-shadow: 0 1px 6px rgba(0,0,0,.2);
+
+
+    .container{
+        width: 1200px;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    
+    #brand{
+        width: fit-content;
+        height: 100%;
+
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+        width: fit-content;
+    
+        .nav-link{
+            height: 50px;
+            padding: 0 15px;
+            margin: 0 10px;
+            line-height: 50px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: 400;
+            text-decoration: none;
+            color: @black;
+
+            &.active{
+                color: @blue;
+            }
+
+            &:hover {
+                color: @blue;
+            }
+        }
+    }
+
+    .nav-buttons{
+        .navbar-toggler{
+            width: 56px;
+            height: 56px;
+            line-height: 56px;
+            margin-left: 50px;
+        }
+        
+        .navbar-toggler-icon{
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            font-size: 40px;
+            color: @gray;
+        }
+        
+        .tel-button{
+            background-color: @blue;
+            color: @white;
+            font-size: 18px;
+        }
+    }
+}
+

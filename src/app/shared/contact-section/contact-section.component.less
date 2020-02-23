@@ -1,0 +1,39 @@
+@import './../../variables.less';
+
+.contact-section{
+    width: 100%;
+    height: fit-content;
+    padding: 50px 30px;
+    border-bottom: 1px solid @gray;
+    border-top: 1px solid @gray;
+
+    .container{
+        max-width: @xl-width;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .text-container{
+            max-width: 700px;
+            width: 100%;
+            margin-right: 50px;
+
+            h2{
+                font-weight: 300;
+                margin-top: 0;
+                margin-bottom: 15px;
+                font-size: 25px;
+            }
+            
+            p {
+                font-size: @regular-font-size;
+                line-height: 150%;
+                font-weight: 300;
+            }
+        }
+    }
+}

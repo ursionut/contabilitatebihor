@@ -1,0 +1,29 @@
+<nav class="navigation">
+    <div class="container">
+        <a id="brand" routerLink="/home">
+            <img id="brand" src="./../../../assets/images/logo.png" alt="brand">
+        </a>
+        <div class="navbar">
+            <a class="nav-link" routerLink="/home" routerLinkActive="active">Acasa</a>
+            <a class="nav-link" routerLink="/about-us" routerLinkActive="active">Despre noi</a>
+            <a class="nav-link" routerLink="/services" routerLinkActive="active">Servicii</a>
+            <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+        </div>
+        <div class="nav-buttons">
+            <a class="tel-link" href="tel:0000">
+                <button 
+                    mat-flat-button
+                    class="tel-button">
+                    +40 754 231 123
+                </button>
+            </a>
+            <button 
+                mat-icon-button 
+                *ngIf="(isHandset | async)!.matches" 
+                class="navbar-toggler" 
+                aria-label="Menu button">
+                <mat-icon class="navbar-toggler-icon">menu</mat-icon>
+            </button>   
+        </div>
+    </div>
+</nav>
